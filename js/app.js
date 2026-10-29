@@ -8,6 +8,7 @@ function cardHTML(p){
   const off=hasPrice(p)&&p.discount>0;
   return `<article class="card">${off?`<span class="badge">-${p.discount}%</span>`:''}
   <img src="${p.image}" alt="${p.name}" loading="lazy">
+  <button class="fav${window.isFav&&isFav(p.id)?' on':''}" data-fav="${p.id}" aria-label="Favoritar ${p.name}" title="Favoritar">♥</button>
   <div class="cbody"><h3>${p.name}</h3><p>${p.description}</p>
   <div>${off?`<span class="old">${brl(p.price)}</span>`:''}<span class="price">${hasPrice(p)?brl(finalPrice(p)):'Preço a definir'}</span></div>
   <div class="cbtns">
