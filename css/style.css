@@ -111,3 +111,15 @@ body::after{z-index:-1;background:linear-gradient(rgba(0,0,0,.58),rgba(0,0,0,.68
 }
 @keyframes cardShine{from{background-position:100% 0}to{background-position:0 0}}
 @media(prefers-reduced-motion:reduce){.card::after{display:none}.card:hover{transform:none}}
+/* ===== AVISOS NEON ===== */
+.notices{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:1300px;margin:-30px auto -30px;padding:0 5%}
+.notice{--neon:252,188,0;display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;background:rgba(14,14,20,.92);border:1px solid rgba(var(--neon),.7);
+ box-shadow:0 0 14px rgba(var(--neon),.25),inset 0 0 14px rgba(var(--neon),.07);animation:neonPulse 3.2s ease-in-out infinite}
+.n-new{background:linear-gradient(120deg,rgba(252,188,0,.07),rgba(14,14,20,.92) 55%)}
+.n-safe{background:linear-gradient(120deg,rgba(252,188,0,.07),rgba(14,14,20,.92) 55%);animation-delay:-1.6s}
+.nico{width:30px;height:30px;flex:none;color:var(--gold);filter:drop-shadow(0 0 6px rgba(var(--neon),.55))}.nico svg{width:100%;height:100%;display:block}
+.notice b{display:block;color:rgb(var(--neon));letter-spacing:2px;font-size:.78rem;text-shadow:0 0 8px rgba(var(--neon),.6)}
+.notice p{color:#fff;font-size:.95rem;line-height:1.4;margin-top:2px}
+@keyframes neonPulse{0%,100%{box-shadow:0 0 10px rgba(var(--neon),.18),inset 0 0 12px rgba(var(--neon),.05)}50%{box-shadow:0 0 20px rgba(var(--neon),.42),inset 0 0 16px rgba(var(--neon),.1)}}
+@media(max-width:800px){.notices{grid-template-columns:1fr;gap:12px;margin:-40px auto -40px}}
+@media(prefers-reduced-motion:reduce){.notice{animation:none}}
