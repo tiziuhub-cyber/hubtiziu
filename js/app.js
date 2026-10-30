@@ -36,7 +36,6 @@ function renderAll(){
   $('#gamesTitle').textContent=activeCat?'JOGOS · '+activeCat.toUpperCase():'JOGOS';
   const catHasAny=!activeCat||PRODUCTS.some(p=>p.category===activeCat);
   fill('#gamesGrid',games,catHasAny?'Nenhum produto encontrado.':'Em breve, novos jogos desta categoria estarão disponíveis.');
-  fill('#offersGrid',list.filter(p=>p.discount>0),q?'Nenhuma oferta encontrada.':'Nenhuma oferta no momento. Volte em breve!');
   fill('#bestGrid',list.filter(p=>p.bestSeller),q?'Nenhum produto encontrado.':'Em breve.');
 }
 function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),1800)}

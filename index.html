@@ -4,7 +4,7 @@
 <body>
 <header>
  <a class="brand" href="#inicio"><img src="assets/logo.png" alt="Logo TIZIU HUB"><b>TIZIU <span>HUB</span></b></a>
- <nav><a href="#inicio">INÍCIO</a><a href="#categorias">CATEGORIAS</a><a href="#jogos">JOGOS</a><a href="#ofertas">OFERTAS</a><a href="#mais-vendidos">MAIS VENDIDOS</a><a href="#contato">CONTATO</a></nav>
+ <nav><a href="#inicio">INÍCIO</a><a href="#categorias">CATEGORIAS</a><a href="#jogos">JOGOS</a><a href="#jogos-em-oferta">OFERTAS</a><a href="#mais-vendidos">MAIS VENDIDOS</a><a href="#contato">CONTATO</a></nav>
  <div class="icons">
   <button class="ibtn" id="searchBtn" aria-label="Pesquisar"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></button>
   <button class="ibtn" id="cartBtn" aria-label="Carrinho"><svg viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l3 12h11l2-8H6"/></svg><span id="count">0</span></button>
@@ -29,8 +29,15 @@
  <aside class="notice n-new"><span class="nico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12a4 4 0 0 1 3.9 4.9l-.8 3.5a2.4 2.4 0 0 1-4 1.1L15 15.5H9l-2.1 2a2.4 2.4 0 0 1-4-1.1l-.8-3.500A4 4 0 0 1 6 8z"/><path d="M8 10.500v3M6.5 12h3"/><circle cx="15.5" cy="11.2" r=".6" fill="currentColor"/><circle cx="17.5" cy="12.8" r=".6" fill="currentColor"/></svg></span><div><b>AVISO</b><p>Vamos adicionar mais jogos em breve!</p></div></aside>
  <aside class="notice n-safe"><span class="nico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7.5 3v5.5c0 4.5-3.1 8-7.5 9.5-4.4-1.5-7.5-5-7.5-9.5V6L12 3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span><div><b>AVISO</b><p>Todos os jogos foram testados e são disponibilizados com segurança. Qualquer dúvida, entre em contato conosco.</p></div></aside>
 </div>
+<section class="sec" id="jogos-em-oferta"><h2>🔥 JOGOS EM OFERTA</h2>
+ <p class="deals-sub">Confira alguns dos jogos que estão com preço especial no TIZIU HUB.</p>
+ <div class="deals" id="dealsCarousel">
+  <button class="deal-arrow deal-prev" type="button" aria-label="Jogo anterior">‹</button>
+  <div class="deal-viewport"><div class="deal-track"></div></div>
+  <button class="deal-arrow deal-next" type="button" aria-label="Próximo jogo">›</button>
+ </div>
+</section>
 <section class="sec" id="jogos"><h2 id="gamesTitle">JOGOS</h2><div class="grid" id="gamesGrid"></div></section>
-<section class="sec" id="ofertas"><h2>OFERTAS</h2><div class="grid" id="offersGrid"></div></section>
 <section class="sec" id="mais-vendidos"><h2>MAIS VENDIDOS</h2><div class="grid" id="bestGrid"></div></section>
 <section class="sec" id="contato">
  <div class="chelp"><h2>PRECISA DE AJUDA?</h2>
@@ -87,7 +94,7 @@
 <footer>
  <div class="fgrid">
   <div><h4>TIZIU HUB</h4><p>Seu hub de jogos para PC.</p></div>
-  <div class="flinks"><a href="#inicio">Início</a><a href="#jogos">Jogos</a><a href="#ofertas">Ofertas</a><a href="#mais-vendidos">Mais vendidos</a><a href="#contato">Contato</a><a href="#">Termos de uso</a><a href="#">Política de privacidade</a></div>
+  <div class="flinks"><a href="#inicio">Início</a><a href="#jogos">Jogos</a><a href="#jogos-em-oferta">Ofertas</a><a href="#mais-vendidos">Mais vendidos</a><a href="#contato">Contato</a><a href="#">Termos de uso</a><a href="#">Política de privacidade</a></div>
  </div>
  <p class="copy">© 2026 TIZIU HUB — Todos os direitos reservados.</p>
 </footer>
@@ -138,5 +145,5 @@
  <button class="btn btn-line" id="logoutBtn">SAIR DA CONTA</button>
 </div>
 <div id="toast"></div>
-<script src="js/products.js"></script><script src="js/app.js"></script><script src="js/contact.js"></script><script src="js/reviews.js"></script><script src="js/account.js"></script>
+<script src="js/products.js"></script><script src="js/app.js"></script><script src="js/contact.js"></script><script src="js/reviews.js"></script><script src="js/account.js"></script><script src="js/ofertas.js"></script>
 </body></html>
